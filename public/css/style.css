@@ -1,0 +1,374 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*--------BODY--------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background: #ebebeb;
+}
+
+/*--------HEADER--------*/
+
+header{
+    background-color: #EAC926;
+}
+.cuotas_logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    
+}
+.cuotas_logo img{
+    max-width: 30%;
+  margin-left: 20px;
+}
+
+.cuotas_logo p{
+    font-size: 12px;
+    max-width: 300%;
+    margin-right: 5px;
+    text-align: center;
+}
+.compra-en-cuotas{
+    font-size: 10px;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 30%
+}
+.barraDeBusqueda{
+display: none;
+}
+.contenedorbarra-lupa{display: none;}
+
+/* ---header : NAVEGACION/ burguer MENU/BANNER-----*/
+nav ul{
+    font-size: 10apx;
+}
+.site{
+    display: none;
+}
+.login{
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+margin-bottom: 0%;    
+}
+
+.fa-bars{
+    border-radius: 10%;
+    font-size: 20px;
+    background-color:#1259c3;
+    padding: 7px;
+    margin-bottom: 5%;
+    color:  white;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ------------------------MAIN---------------------------*/
+main{
+    width: 90%;
+  margin-left: 5%;
+margin-right: 5%;
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: green;
+    }
+.titulos-seccion{
+    font-size: 24px;
+    color:  #909090;
+}
+.precios{
+    font-size: 18px;
+    max-width:30%;
+}
+.descuentos{
+    font-size:16px;
+    max-width: 70%;
+    color: green;
+    margin-left: 25px;
+}
+.contenedor-precios-descuentos{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-left: 10px;
+}
+.descripciones{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #909090;
+    display: none;
+}
+
+.articulo-items{
+    position: relative;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 5%;
+   
+}
+
+.contenedor-articulos{
+   margin-right: 5%;
+   transition: all  200ms;
+
+}
+.fa-truck{
+    transition: all 300ms;
+}
+.contenedor-articulos:hover .fa-truck{
+    rotate: -90deg;
+}
+.contenedor-articulos:hover{ 
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+
+.contenedor-articulos:hover .descripciones{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #909090;
+    display: inline-block;
+}
+
+/* ------------------------FOOTER---------------------------*/
+
+footer{
+    text-align: center;
+    margin-top: 20%;
+}
+footer p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.icono-footer{
+    color:#1259c3 ;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+.fa-truck:before{
+   margin-left: 20%;
+}
+
+    
+    @media (min-width: 361px){
+        .cuotas_logo{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cuotas_logo img{
+            max-width: 20%;
+          margin-left: 30px;
+          height: 90px;
+        }
+        .cuotas_logo p{
+            margin-right: 30px;
+        }
+        
+        
+        .barraDeBusqueda{
+            display: block;
+            width: 100%;
+           }
+           .contenedorbarra-lupa{
+            display: flex;
+           }
+        main{
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        section{
+            margin-left: 3%;
+            margin-right: 3%
+        }
+
+
+            .burger-menu{
+                display: none;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+              }
+              nav ul{
+                list-style:none;
+                margin-bottom: 10px;
+            }
+            .site{
+              min-width: 40%;
+                display: flex;
+                margin-left: 15px;
+                justify-content: space-around;
+                
+            }
+            .login{
+                min-width: 40%;
+                display: flex;
+                justify-content: space-around;
+            }
+        .articulo-items{
+            margin-bottom: 7%;
+        }
+    }
+
+    @media(min-width:769px){
+        main{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            margin-left: 1%;
+        }
+
+        .contenedor-todoslosarticulos{
+            display: flex;
+        }
+        .site{ justify-content: space-around;
+           
+        }
+        .login{
+           max-width: 40%;
+            justify-content: space-around;
+        }
+        .burger-menu{display: none;
+        
+        }
+         nav{
+            display: flex;
+        }
+
+        nav ul{
+            margin-right: 0%;
+            list-style:none;
+            padding-inline-start: 0px;
+           
+        }
+        .contenedor-todoslosarticulos{
+            margin-bottom: 5%;
+        
+        }
+     .contenedor-articulos{
+        height: 100%;
+     }
+     .articulo-items{
+        margin-bottom: 0%; 
+     }
+    footer{
+        margin-top: 0%;
+    }
+    .contenedor-tarjetas-footer{
+        display: flex;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    footer .copyright{
+        margin-bottom: 20px;
+        margin-left: 10px;
+    text-align: left;
+    }
+    .icono-footer{
+        color:#1259c3 ;
+        font-size: 2em;
+        margin-bottom: 10px;
+        transition: all 200ms;
+    }
+  .icono-footer:hover{
+        color: black;
+    }
+
+    }
+
+
+
+/*-------FORMULARIO CREA TU CUENTA------*/
+.formulario{
+    padding: 20px  15px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 10px;
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+.titulos-form{
+    font-size: 15px;
+    font-weight: bold;
+}
+.comprador{
+    margin-right: 20px;
+}
+.Intereses input{
+    border-bottom: 100px;
+}
+/*-------FORMULARIO INGRESA------*/
+
+.contenedor1login{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.contenedor1login input{
+    border: #ebebeb;
+}
+.contenedor2login input{
+    border: #ebebeb;
+}
+.boton-login{
+    margin-top: 20px;
+    margin-bottom: 30px;
+border-radius: 5px;
+border-width: 0.2px;
+background-color: #1259c3;
+color: #ebebeb;
+border: #ebebeb;
+transition: all 350ms;
+}
+
+.boton-login:hover{
+background-color: #0022AA;
+}
+
+
+input:required:invalid{
+    border: red solid 2px;
+}
+input:valid{
+    border: 2px solid black;
+}
